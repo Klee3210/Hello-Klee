@@ -96,4 +96,3 @@ def train_model(model,train_loader,val_loader,num_epochs):
             loss = criterion(outputs, targets)
             optimizer.zero_grad()
             loss.backward()  # 反向传播
-
