@@ -7,6 +7,7 @@ from torchsummary import summary
 保持经典结构设置，便于与课本/论文中的结果对齐。
 """
 
+
 class LeNet(nn.Module):
     """
     LeNet-5 经典卷积神经网络结构，针对单通道输入设计。
