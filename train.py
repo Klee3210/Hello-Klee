@@ -48,3 +48,6 @@ for i in np.arange(len(batch_y)):
     plt.axis('off')
     plt.subplots_adjust(wspace=0.05)
 plt.show()
+
+
+

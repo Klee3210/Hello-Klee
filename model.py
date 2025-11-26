@@ -50,3 +50,5 @@ if __name__ == '__main__':
     model = LeNet().to(device)
     # summary 将展示每层输出尺寸与参数数量，调试时非常有用
     print(summary(model, (1, 28, 28)))
+
+
