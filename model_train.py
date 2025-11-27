@@ -86,7 +86,7 @@ def train_model(model,train_loader,val_loader,num_epochs):
         # ------- 训练阶段 -------
         for batch_idx, (inputs, targets) in enumerate(train_loader):
             # 将一个batch的数据与标签转移到当前设备
-            inputs, targets = inputs.to(device), targets.to(device)
+            inputs, targets = inputs.to(device), targets.uto(device)
             # 显式切换至训练模式，确保BN/Dropout等行为正确
             model.train()
             # 前向传播获得预测结果
@@ -96,7 +96,4 @@ def train_model(model,train_loader,val_loader,num_epochs):
             loss = criterion(outputs, targets)
             optimizer.zero_grad()
             loss.backward()  # 反向传播
-
-
-
 
